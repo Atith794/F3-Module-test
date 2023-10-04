@@ -1,43 +1,3 @@
-// function getUserIP() {
-//     fetch("https://ipinfo.io/json")
-//       .then(response => response.json())
-//       .then(data => {
-//         const ipAddress = data.ip;
-//         // Display the IP address on the page
-//         document.getElementById("ip-address").textContent = `Your Current IP Address is: ${ipAddress}`;
-//       })
-//       .catch(error => {
-//         console.error("Error fetching IP address:", error);
-//       });
-//   }
-  
-//   // Call the function to get and display the IP address when the page loads
-//   window.addEventListener("load", getUserIP);
-
-//   // Replace 'userIP' with the actual user's IP address
-// const userIP = getUserIP();
-
-// // Construct the API URL with the user's IP
-// const apiUrl = `https://ipapi.co/${userIP}/json/`;
-
-// // Send the API request
-// fetch(apiUrl)
-//   .then(response => {
-//     if (!response.ok) {
-//       throw new Error(`HTTP error! Status: ${response.status}`);
-//     }
-//     return response.json();
-//   })
-//   .then(data => {
-//     // Handle the data from the API response
-//     console.log(data); // You can do something with the JSON data here
-//   })
-//   .catch(error => {
-//     console.error('Error fetching IP API:', error);
-//   });
-
- 
-
 
 // Function to fetch the user's IP address and display it on the page
 function getUserIP() {
@@ -73,6 +33,10 @@ function getUserIP() {
         position: { lat: parseFloat(latitude), lng: parseFloat(longitude) },
         map: map,
         title: "Your Location"
+
+        
+
+
       });
 
       })
@@ -84,9 +48,13 @@ function getUserIP() {
   }
 
 
-//   window.addEventListener("load", getUserIP);
+// window.addEventListener("load", getUserIP);
   
   // Call the function to get and display the IP address when the page loads
   window.addEventListener("load", getUserIP);
   
   document.getElementById("btngs").addEventListener("click", getAdditionalInfo);
+  document.getElementById("btngs").addEventListener("click", () => {
+    // Open the map.html page in a new browser tab/window
+    window.open("map.html", "_blank");
+  });
