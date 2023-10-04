@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+  <title>User's Location Map</title>
+
+  <style>
+    /* Add CSS styles for the map container if needed */
+    #map {
+      height: 400px;
+      width: 80%;
+    }
+  </style>
+</head>
+<body>
+  <div id="ip-address">
+    <h2 id="IP">IP address: </h2>
+  </div>
+  <div id="itms">
+    <div id="col1">
+      <p>Lat:        </p>
+      <p>Long:       </p>
+    </div>
+    <div id="col2">
+      <p>City:       </p>
+      <p>Regoin:     </p>
+    </div>
+    <div id="col3">
+      <p>Organization:</p>
+      <p>Hostname:</p>
+    </div>
+  </div>
+  
+  <h1>Your Current Location</h1>
+  <div id="map"></div>
+
+
+  <div id="pupr"></div>
+  <div id="moreinfo">
+    <h2>More Information About You</h2>
+  </div>
+
+  <div id="tz">
+    <p>Time zone</p>
+    <p>Pincode</p>
+    <p>Date and time</p>
+    <p>Message</p>
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNAt1xgzNlK-54ajUEHOzox5qzKa-zyfw&callback=Function.prototype"></script>
+
+  <script src="map.js"></script>
+
+  <input type="text" id="searchBox" placeholder="Search by name or branch office">
+  <div id="postOfficesList"></div>
+</body>
+</html>
