@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  background: black;
+}
+
+body > h1 {
+  color: #575a85;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+body {
+  color: #b8bccc;
+}
+#ip-address {
+  color: #ffffff;
+}
+
+#head3 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 2rem;
+  padding-top: 0.5rem;
+  width: 651px;
+  height: 8px;
+}
+
+#undraw {
+  position: absolute;
+  width: 60vw;
+  height: 50vh;
+  top: 40vh;
+  /* left: 1vw; */
+}
+
+#purprec {
+  position: absolute;
+  width: 50rem;
+  height: 100vh;
+  right: 0px;
+  background: #575a85;
+  padding-top: 0px;
+  top: 0px;
+}
+
+#ip-address {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  background-color: #575a85;
+}
+
+#btngs{
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    z-index: 100;
+    width: 345px;
+    height: 67px;
+    border-radius: 10px;
+    border-color: #B8BCCC;
+    background: #575a85;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #B8BCCC;
+}
+
